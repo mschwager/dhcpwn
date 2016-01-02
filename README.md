@@ -30,7 +30,7 @@ This attack is typically considered to be a form of DoS.
 # Installing
 
 ```
-$ pip install https://github.com/mschwager/dhcpwn
+$ pip install git+https://github.com/mschwager/dhcpwn
 ```
 
 OR
