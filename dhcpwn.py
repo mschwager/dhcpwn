@@ -2,6 +2,7 @@
 
 import argparse
 import logging
+import string
 
 # Quiet scapy
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
