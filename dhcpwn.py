@@ -50,6 +50,7 @@ def parse_args():
         help='network interface to use')
 
     subparsers = p.add_subparsers(dest='command')
+    subparsers.required = True
 
     flood = subparsers.add_parser('flood')
     flood.add_argument('-c', '--count', action='store',
