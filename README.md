@@ -5,10 +5,12 @@ used to sniff local `DHCP` traffic.
 
 Useful links:
 
-* https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
-* https://tools.ietf.org/html/rfc2131
-* https://en.wikipedia.org/wiki/Bootstrap_Protocol
-* https://tools.ietf.org/html/rfc951
+* [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol)
+  * [RFC1531](https://tools.ietf.org/html/rfc1531) (obsolete)
+  * [RFC1541](https://tools.ietf.org/html/rfc1541) (obsolete)
+  * [RFC2131](https://tools.ietf.org/html/rfc2131)
+* [Bootstrap Protocol](https://en.wikipedia.org/wiki/Bootstrap_Protocol)
+  * [RFC951](https://tools.ietf.org/html/rfc951)
 
 # Overview
 
