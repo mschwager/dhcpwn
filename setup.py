@@ -10,7 +10,7 @@ with open(requirements_filename) as fd:
 
 setup(
     name='dhcpwn',
-    version='1.0',
+    version='1.0.1',
     description='All your IPs are belong to us.',
     url='https://github.com/mschwager/dhcpwn',
     py_modules=['dhcpwn'],
