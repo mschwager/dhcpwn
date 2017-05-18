@@ -1,1 +1,1 @@
-scapy-python3
+scapy-python3==0.20
