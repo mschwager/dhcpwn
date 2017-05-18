@@ -1,5 +1,9 @@
 # DHCPwn
 
+[![Build Status](https://travis-ci.org/mschwager/dhcpwn.svg?branch=master)](https://travis-ci.org/mschwager/dhcpwn)
+[![Python Versions](https://img.shields.io/pypi/pyversions/dhcpwn.svg)](https://img.shields.io/pypi/pyversions/dhcpwn.svg)
+[![PyPI Version](https://img.shields.io/pypi/v/dhcpwn.svg)](https://img.shields.io/pypi/v/dhcpwn.svg)
+
 DHCPwn is a tool used for testing `DHCP` `IP` exhaustion attacks. It can also be
 used to sniff local `DHCP` traffic.
 
