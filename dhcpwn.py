@@ -40,8 +40,8 @@ def dhcp_flood(**kwargs):
 
 
 def print_dhcp_response(response):
-    print("Source: ".format(response[l2.Ether].src))
-    print("Destination: ".format(response[l2.Ether].dst))
+    print("Source: {}".format(response[l2.Ether].src))
+    print("Destination: {}".format(response[l2.Ether].dst))
 
     for o in response[dhcp.DHCP].options:
         if o in ["end", "pad"]:
