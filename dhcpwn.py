@@ -43,10 +43,23 @@ def print_dhcp_response(response):
     print("Source: {}".format(response[l2.Ether].src))
     print("Destination: {}".format(response[l2.Ether].dst))
 
-    for o in response[dhcp.DHCP].options:
-        if o in ["end", "pad"]:
+    for option in response[dhcp.DHCP].options:
+        if isinstance(option, tuple):
+            option, value = option
+        else:
+            # For some reason some options are strings instead of tuples
+            option, value = option, None
+
+        if option in ["end", "pad"]:
             break
-        print("Option: {}".format(o))
+
+        output = "Option: {} -> {}".format(option, value)
+
+        if option == "message-type":
+            dhcp_type = dhcp.DHCPTypes.get(value, "unknown")
+            output = "{} ({})".format(output, dhcp_type)
+
+        print(output)
 
 
 def dhcp_sniff(**kwargs):
