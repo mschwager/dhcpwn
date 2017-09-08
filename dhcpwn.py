@@ -87,7 +87,8 @@ def parse_args():
         '-c',
         '--count',
         action='store',
-        default=10, type=int,
+        default=10,
+        type=int,
         help='number of address to consume'
     )
 
