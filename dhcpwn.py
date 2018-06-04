@@ -89,7 +89,7 @@ def parse_args():
         action='store',
         default=10,
         type=int,
-        help='number of address to consume'
+        help='number of addresses to consume'
     )
 
     subparsers.add_parser('sniff')
