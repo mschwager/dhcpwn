@@ -45,18 +45,18 @@ def print_dhcp_response(response):
 
     for option in response[dhcp.DHCP].options:
         if isinstance(option, tuple):
-            option, value = option
+            option, *values = option
         else:
             # For some reason some options are strings instead of tuples
-            option, value = option, None
+            option, *values = option, None
 
         if option in ["end", "pad"]:
             break
 
-        output = "Option: {} -> {}".format(option, value)
+        output = "Option: {} -> {}".format(option, values)
 
-        if option == "message-type":
-            dhcp_type = dhcp.DHCPTypes.get(value, "unknown")
+        if option == "message-type" and len(values) == 1:
+            dhcp_type = dhcp.DHCPTypes.get(values[0], "unknown")
             output = "{} ({})".format(output, dhcp_type)
 
         print(output)
