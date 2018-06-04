@@ -14,10 +14,18 @@ requirements_dev_filename = os.path.join(
 with open(requirements_filename) as fd:
     tests_require = [i.strip() for i in fd.readlines()]
 
+long_description_filename = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), 'README.md')
+
+with open(long_description_filename) as fd:
+    long_description = fd.read()
+
 setup(
     name='dhcpwn',
     version='1.0.3',
     description='All your IPs are belong to us.',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/mschwager/dhcpwn',
     py_modules=['dhcpwn'],
     license='GPLv3',
