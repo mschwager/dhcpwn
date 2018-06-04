@@ -22,7 +22,7 @@ with open(long_description_filename) as fd:
 
 setup(
     name='dhcpwn',
-    version='1.0.3',
+    version='1.1.0',
     description='All your IPs are belong to us.',
     long_description=long_description,
     long_description_content_type='text/markdown',
